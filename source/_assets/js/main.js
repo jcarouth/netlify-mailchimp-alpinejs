@@ -1,0 +1,1 @@
+let alpinejs = require('alpinejs')
