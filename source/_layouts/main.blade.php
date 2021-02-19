@@ -7,6 +7,11 @@
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->title }}</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <style>
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="min-h-screen text-gray-900 font-sans antialiased">
