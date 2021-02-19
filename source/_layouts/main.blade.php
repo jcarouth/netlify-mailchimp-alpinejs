@@ -21,6 +21,10 @@
                 @yield('body')
             </main>
 
+            <aside class="bg-gray-600 text-white">
+                @include('_components/newsletter-footer')
+            </aside>
+
             <footer class="bg-gray-800 py-10 text-white">
                 <div class="max-w-6xl mx-auto text-center">
                     This project is <a href="https://github.com/jcarouth/netlify-mailchimp-alpinejs/">open source on Github</a>. Created by <a href="https://twitter.com/jcarouth">@jcarouth</a>.
