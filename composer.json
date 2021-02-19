@@ -1,0 +1,14 @@
+{
+  "name": "jcarouth/netlify-mailchimp-alpinejs",
+  "description": "Demo app for Netlify Function to handle Mailchimp subscribe form powered by AlpineJS",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jeff Carouth",
+      "email": "jcarouth@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}

@@ -1,0 +1,15 @@
+server {
+    listen 80;
+
+    root /app/build_local;
+    error_log /dev/stdout;
+    index index.html
+
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+}

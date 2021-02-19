@@ -1,0 +1,10 @@
+/.idea/
+/.vscode/
+/build_*/
+/cache/
+/node_modules/
+/vendor/
+/source/assets/build/*
+/source/assets/build/icons/spritemap.svg
+npm-debug.log
+.netlify

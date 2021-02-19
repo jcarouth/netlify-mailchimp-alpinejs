@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8888:80"
+    volumes:
+      - ".:/app"
+    working_dir: /app
