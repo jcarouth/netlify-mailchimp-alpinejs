@@ -1,10 +1,8 @@
-/.idea/
-/.vscode/
-/build_*/
+/build_local/
 /cache/
 /node_modules/
+/source/assets/build/
 /vendor/
-/source/assets/build/*
-/source/assets/build/icons/spritemap.svg
+/.idea/
+/.vscode/
 npm-debug.log
-.netlify

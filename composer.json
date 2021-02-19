@@ -10,5 +10,6 @@
     }
   ],
   "require": {
+    "tightenco/jigsaw": "^v1.3.36"
   }
 }
