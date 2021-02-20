@@ -1,1 +1,3 @@
-let alpinejs = require('alpinejs')
+require('alpinejs');
+
+require('./components/newsletter');
