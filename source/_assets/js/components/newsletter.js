@@ -7,11 +7,17 @@ window.newsletter = function() {
     },
     data: {
       email: '',
-      listId: '1234',
+      listId: '',
     },
     error: false,
     loading: false,
     message: '',
+    init() {
+      const listIdInput = this.$el.querySelector('input[name=listId]')
+      if (listIdInput) {
+        this.data.listId = listIdInput.value;
+      }
+    },
     reset() {
       this.loading = false;
       if (!this.error) {
