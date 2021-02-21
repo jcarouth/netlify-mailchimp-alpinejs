@@ -11,6 +11,7 @@
                         {id: 'aprilfools', name: "April Fool's Day", date: 'Apr 1'},
                         {id: 'juneteenth', name: 'Juneteenth', date: 'June 19'}
                     ],
+                    message: '',
                     selectedHolidays: [],
                     toggleHoliday(id) {
                         if (this.holidaySelected(id)) {
@@ -23,6 +24,24 @@
                     },
                     holidaySelected(id) {
                         return this.selectedHolidays.indexOf(id) > -1;
+                    },
+                    submit() {
+                        const formData = new FormData(this.$el);
+                        const self = this;
+
+                        fetch('/', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                            body: new URLSearchParams(formData).toString(),
+                        }).then(resp => {
+                            if (resp.ok) {
+                                self.message = 'Form submitted successfully';
+                            } else {
+                                self.message = 'Error submitting form';
+                            }
+                        }).catch(e => {
+                            self.message = 'Big error submitting form';
+                        })
                     }
                 }
             }
@@ -54,7 +73,8 @@
                 <input x-model="selectedHolidays" type="hidden" name="selectedHolidays">
             </div>
 
-            <button type="submit" class="block mt-12 border px-4 py-2">Submit</button>
+            <div x-cloak x-show="message" x-text="message" class="my-8 text-blue-700"></div>
+            <button @click.prevent="submit()" type="submit" class="block mt-12 border px-4 py-2">Submit</button>
         </form>
     </div>
 @endsection
