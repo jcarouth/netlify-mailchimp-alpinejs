@@ -93,6 +93,8 @@ title: Flexible Carousel with AlpineJS and TailwindCSS
             This is an adaptation of the work by Maks Akymenko in his article <a class="underline" href="https://css-tricks.com/a-super-flexible-css-carousel-enhanced-with-javascript-navigation/">A Super Flexible CSS Carousel, Enhanced With JavaScript Navigation on css-tricks.com</a> into styling with TailwindCSS and using AlpineJS.
         </p>
 
+        <p class="mt-12 text-lg"><a href="https://carouth.com/articles/flexible-carousel-with-alpinejs/">See my blog post about this adaptation</a> for more details.</p>
+
         <div class="mt-12 flex mx-auto items-center">
             <div x-data="carousel()" x-init="init()" class="relative overflow-hidden group">
                 <div x-ref="container" class="md:-ml-4 md:flex md:overflow-x-scroll scroll-snap-x md:space-x-4 space-y-4 md:space-y-0 no-scrollbar">
