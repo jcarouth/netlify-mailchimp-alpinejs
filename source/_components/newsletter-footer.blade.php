@@ -4,7 +4,7 @@
             Join the Newsletter
         </h3>
         <p class="mt-4 text-lg">
-            Get up to date information and other random tidbits from us. You know you want to.
+            Get up to date information and other random tidbits from us. You know you want to. (There isn't really a newsletter.)
         </p>
     </div>
     <div class="w-full md:w-3/5 mt-8 md:mt-0 flex flex-col justify-center">

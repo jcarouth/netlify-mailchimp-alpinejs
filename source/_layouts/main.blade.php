@@ -18,7 +18,7 @@
         <div class="flex flex-col min-h-screen">
             <header class="bg-gray-800 text-white">
                 <div class="container max-w-6xl mx-auto py-12">
-                    <div class="text-3xl">Newsletter Subscribe with Netlify Functions, Mailchimp, and AlpineJS</div>
+                    <div class="text-3xl">{{ $page->title }}</div>
                 </div>
             </header>
 
@@ -32,7 +32,7 @@
 
             <footer class="bg-gray-800 py-10 text-white">
                 <div class="max-w-6xl mx-auto text-center">
-                    This project is <a href="https://github.com/jcarouth/netlify-mailchimp-alpinejs/">open source on Github</a>. Created by <a href="https://twitter.com/jcarouth">@jcarouth</a>.
+                    This project is <a class="underline" href="https://github.com/jcarouth/netlify-mailchimp-alpinejs/">open source on Github</a>. Created by <a class="underline" href="https://twitter.com/jcarouth">@jcarouth</a>.
                 </div>
             </footer>
         </div>
